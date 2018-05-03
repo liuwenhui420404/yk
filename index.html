@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href='./css/style.css'>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 10 + 'px'
+    </script>
+</head>
+
+<body>
+    <script type="text/x-handlebars-template" id="tpl">
+        <div class="wrap">
+            <header>
+                <i class="iconfont" iconfont>♀</i>
+                <input type="text">
+                <i class="iconfont" iconfont>♂</i>
+            </header>
+            <section>
+                <div class="nav">
+
+                    <ul>
+                        {{#each arr}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+
+                </div>
+            </section>
+            <footer></footer>
+        </div>
+    </script>
+</body>
+<script src="./js/lib/require.js" data-main="./js/main"></script>
+
+</html>
